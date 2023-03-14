@@ -1,0 +1,15 @@
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj pierwszą liczbę: ");
+        int numb1 = scan.nextInt();
+        System.out.println("Podaj drugą liczbę: ");
+        int numb2 = scan.nextInt();
+        System.out.println("Podaj które działanie chcesz zrobić: ");
+        String numbs = scan.next();
+
+        switch (numbs) {
+            case "+" -> System.out.println("Suma = " + (numb1 + numb2));
+            case "-" -> System.out.println("Odejmowanie = " + (numb1 - numb2));
+            case "/" -> System.out.println("Dzielenie = " + (numb1 / numb2));
+            case "*" -> System.out.println("Mnożenie = " + (numb1 * numb2));
+            default -> System.out.println("No jesteś kurwa debiłem");
+        }
